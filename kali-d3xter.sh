@@ -93,7 +93,7 @@ if [[ "$response" =~ ^([yY][eE][sS]|[yY])+$ ]]
 then
     apt-get install gcc build-essential linux-headers-$(uname -r) 
     git clone https://github.com/mfruba/kernel kernel-1
-    cd kernel/drivers/TL-WN722N_v2.0-Ralink/rtl8188EUS_linux_v4.3.0.8_13968.20150417
+    cd kernel-1/drivers/TL-WN722N_v2.0-Ralink/rtl8188EUS_linux_v4.3.0.8_13968.20150417
     make
     make install
     insmod /lib/modules/4.9.0-kali4-amd64/kernel/drivers/net/wireless/8188eu.ko
