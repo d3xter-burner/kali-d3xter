@@ -41,6 +41,7 @@ echo "                                            "
 read -r -p "Would you like to install PPA? [y/N] " response
 if [[ "$response" =~ ^([yY][eE][sS]|[yY])+$ ]]
 then
+	apt-get install dirmngr
 	wget http://blog.anantshri.info/content/uploads/2010/09/add-apt-repository.sh.txt
 	cp add-apt-repository.sh.txt /usr/sbin/add-apt-repository
 	chmod o+x /usr/sbin/add-apt-repository
